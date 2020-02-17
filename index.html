@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<form name="loginForm" method="post" action="login">
+<table width="10%" bgcolor="pink" align="left">
+
+
+<tr>
+<td colspan=2><font size=4><b> Login Page</b></font></td>
+</tr>
+
+<form method= POST action="{{url_for('login')}}">
+  <div class = "form-group">
+    <label for = "input username">username</label>
+    <input type = "text" class="form-control" name="username" placeholder="username">
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class = "form-group">
+    <label for = "inputpassword">password</label>
+    <input type = "password" class="form-control" name = "password" placeholder="password">
+  </div>
+  <br>
+  <br>
+
+
+<tr>
+<td ><input type="Reset"></td>
+<td><button type="submit" class = "btn btn-primary btn-block">login </button></td>
+</tr>
+
+</table>
+</form>
+<br>
+<div>
+  Dont have an account? <a = href="{{url_for('register') }}">Register here now!</a>
+</div>
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!- <!doctype html>
+<html lang="en">
+  <head>
+      <!- Required meta tags -->
+    <!-- meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Chatbot</title> -->
+  <!-- </head>
+  <body>
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <div class="h-100 justify-content-center">
+                    <div class="chat-container" style="overflow: auto; max-height: 80vh">
+                        <!- chat messages -->
+                        <!-- <h1>Welcome to chatbot</h1>
+                        <label for="chatbot">lets chat:</label>
+                        <textarea id="chatbot" rows="2" cols="40"> -->
+ 
+                        <!-- </textarea> -->
+                        <!-- <button type="button">Ask Me! </button> -->
+                        
+                    <!-- </div>
+                </div>
+            </div>
+        </div>
+    </div> --> 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='custom.js')}}"></script> -->
+  <!-- </body>
+</html> --> 
