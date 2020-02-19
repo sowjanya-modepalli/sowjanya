@@ -22,11 +22,11 @@ def index():
 def login():
     users = client.db.chat
     print(type(users))
-    present_user = users.find_one({'username' : request.form['username']})
-    print(str(present_user))
+    logged_user = users.find_one({'username' : request.form['username']})
+    print(str(logged_user))
 
     if present_user:
-        if(request.form['password'] == present_user['password']):
+        if(request.form['password'] == logged_user['password']):
     
             session['username'] = request.form['username']
             return render_template('mychat.html')
